@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+#
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Install JSON Server
 
-## Available Scripts
+```
+npm install -g json-server@0.17.4
+```
 
-In the project directory, you can run:
+### Create a data/db.json file with some data
 
-### `npm start`
+```json
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Tắt Đèn",
+      "authorId": 1,
+      "publishedYear": 1939,
+      "genreId": 1,
+      "price": 8.99
+    },
+    {
+      "id": 2,
+      "title": "Số Đỏ",
+      "authorId": 2,
+      "publishedYear": 1936,
+      "genreId": 1,
+      "price": 9.5
+    },
+    {
+      "id": 3,
+      "title": "Dế Mèn Phiêu Lưu Ký",
+      "authorId": 3,
+      "publishedYear": 1941,
+      "genreId": 2,
+      "price": 7.99
+    },
+    {
+      "id": 4,
+      "title": "Tôi Thấy Hoa Vàng Trên Cỏ Xanh",
+      "authorId": 4,
+      "publishedYear": 2010,
+      "genreId": 3,
+      "price": 12
+    },
+    {
+      "id": 5,
+      "title": "Mắt Biếc",
+      "authorId": 4,
+      "publishedYear": 1990,
+      "genreId": 3,
+      "price": 10.5
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "name": "Văn học hiện thực"
+    },
+    {
+      "id": 2,
+      "name": "Thiếu nhi"
+    },
+    {
+      "id": 3,
+      "name": "Tiểu thuyết"
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Ngô Tất Tố"
+    },
+    {
+      "id": 2,
+      "name": "Vũ Trọng Phụng"
+    },
+    {
+      "id": 3,
+      "name": "Tô Hoài"
+    },
+    {
+      "id": 4,
+      "name": "Nguyễn Nhật Ánh"
+    }
+  ]
+}
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Start JSON Server
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+json-server --watch --port 3004 data/db.json
+```
 
-### `npm test`
+## Install axios
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm i axios
 
-### `npm run build`
+## Install react-toastify
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install --save react-toastify
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Install uuid
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+npm install uuid
+```
