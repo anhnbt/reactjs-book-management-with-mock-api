@@ -4,12 +4,18 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ToastContainer } from "react-toastify";
+import { ThemeProvider } from "react-bootstrap";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ToastContainer />
-    <App />
+    <ThemeProvider
+      breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
+      minBreakpoint="xxs"
+    >
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 

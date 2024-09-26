@@ -95,7 +95,11 @@ json-server --watch --port 3004 data/db.json
 
 ## Install axios
 
+Sử dụng gói này để call các API
+
+```
 npm i axios
+```
 
 ## Install react-toastify
 
@@ -104,6 +108,8 @@ npm install --save react-toastify
 ```
 
 ## Install uuid
+
+Để tạo ra mã id tự động
 
 ```
 npm install uuid

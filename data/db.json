@@ -39,6 +39,14 @@
       "publishedYear": 1990,
       "genreId": 3,
       "price": 10.5
+    },
+    {
+      "title": "Test",
+      "authorId": "1",
+      "genreId": "1",
+      "publishedYear": "1995",
+      "price": "1000",
+      "id": "5826bfc6-e4be-4a92-a695-d63c63929090"
     }
   ],
   "genres": [
